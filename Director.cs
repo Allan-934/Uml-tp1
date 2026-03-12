@@ -2,7 +2,7 @@ public class Director
 {
     private string firstName = string.Empty;
     private string lastName = string.Empty; 
-    private string country = string.Empty; 
+    
 
     public string GetFirstName()
     {
@@ -22,17 +22,10 @@ public class Director
         this.lastName = lastName;
     }       
 
-    public string GetCountry()
-    {
-        return country;
-    }       
-    public void SetCountry(string country)
-    {
-        this.country = country;
-    }
+    
 
     public void Display()
     {
-        Console.WriteLine($"First Name: {GetFirstName()}, Last Name: {GetLastName()}, Country: {GetCountry()}");
+        Console.WriteLine($"First Name: {GetFirstName()}, Last Name: {GetLastName()}");
     }
 }
