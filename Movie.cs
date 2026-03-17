@@ -2,7 +2,7 @@ public class Movie
 {
     private string title = string.Empty;
     private int duree;
-    private Director director;
+    private Director director = new Director();
 
     public string GetTitle()
     {
