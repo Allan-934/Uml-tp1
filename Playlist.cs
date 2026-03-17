@@ -4,7 +4,7 @@ public class Playlist
     private List<Movie> movies = new List<Movie>();
     
 
-    public string GetNName()
+    public string GetName()
     {
         return name;
     }
@@ -33,9 +33,9 @@ public class Playlist
         movies.Add(movie);
     }
 
-    public void Display ()
+    public void DisplayMovies ()
     {
-        Console.WriteLine($"Nom de la playlist: {GetNName()}");
+        Console.WriteLine($"Nom de la playlist: {GetName()}");
         Console.WriteLine("Films dans la playlist:");
         foreach (Movie movie in GetMovies())
         {
