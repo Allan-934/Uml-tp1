@@ -1,26 +1,25 @@
-public class Movie
+public class Movie 
 {
-    private string Title = string.Empty;
-    private int duration;
-    private Director director  = new Director();
+    private string title = string.Empty;
+    private int duree;
+    private Director director;
 
     public string GetTitle()
     {
-        return Title;
+        return title;
     }
     public void SetTitle(string title)
     {
-        this.Title = title;
+        this.title = title;
     }
 
-    public int GetDuration()
+    public int GetDuree()
     {
-        return duration;
+        return duree;
     }
-
-    public void SetDuration(int duration)
+    public void SetDuree(int duree) 
     {
-        this.duration = duration;
+        this.duree = duree;
     }
 
     public Director GetDirector()
@@ -31,5 +30,10 @@ public class Movie
     {
         this.director = director;
     }
-    
-}
+
+    public void Display()
+    {
+        Console.WriteLine($"Title: {GetTitle()}, Duration: {GetDuree()} minutes, Director: {GetDirector().GetFirstName()} {GetDirector().GetLastName()}");
+    }
+
+} 

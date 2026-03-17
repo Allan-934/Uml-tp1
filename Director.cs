@@ -22,8 +22,6 @@ public class Director
         this.lastName = lastName;
     }       
 
-    
-
     public void Display()
     {
         Console.WriteLine($"First Name: {GetFirstName()}, Last Name: {GetLastName()}");
